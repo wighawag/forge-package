@@ -6,11 +6,10 @@ import "forge-std/Test.sol";
 import {GM} from "src/GM.sol";
 
 contract GMTest is Test {
-    
     function setUp() public {}
 
     function testGet() public {
-        string greeting = GM.gm()
+        string memory greeting = GM.gm();
 
         assertEq(greeting, "gm");
     }
